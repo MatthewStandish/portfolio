@@ -1,22 +1,27 @@
 :root {
-  --white: #E0DFD5;
+  --white: #e0dfd5;
   --red: #ef6461;
   --yellow: #e4b363;
   --black: #313638;
 }
 
-html{scroll-behavior:smooth}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: var(--black);
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: var(--black);
-}
-
-header {
+  border: 0;
+  box-sizing: border-box;
 }
 
 .nav {
@@ -26,10 +31,6 @@ header {
   padding: 0;
   overflow: hidden;
   background-color: var(--black);
-}
-
-.nav li {
-  float: left;
 }
 
 nav li a {
@@ -53,66 +54,79 @@ nav li a:hover:not(.active) {
   color: var(--white);
 }
 
-.matthewstandish img {
-  max-width: 100%;
-  border-radius: 50%;
+.container {
+  background-color: red;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
-h1 {
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--red);
+  flex: 0 0 300px;
+}
+
+.header h1 {
   font-family: "Oswald, bold", sans-serif;
   font-display: auto;
   color: var(--white);
-  font-size: 120px;
-  text-shadow: 4px 4px 4px var(--red);
+  font-size: auto;
+  text-shadow: 4px 4px 4px var(--white);
 }
 
-img {
-  display: block;
+.header img {
   max-width: 100%;
+  border-radius: 50%;
+  margin-left: 20px;
+  height: 200px;
 }
 
+.main {
+  background-color: var(--black);
+  flex: 1 0 auto;
+  flex-flow: row wrap;
+}
+
+.projects {
+  border: 4px solid #222;
+  min-height: 250px;
+  flex: 1 0 50%;
+}
+
+.project1 img {
+  width: 20px;
+}
 
 footer {
-  background-color: #333;
+  background-color: var(--red);
   color: var(--white);
-  padding: 20px 0;
-}
-
-.foot {
-  max-width: 1200px;
+  padding: 20px 20px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
 }
 
-.project1{
-display: flex;
-border-style: solid;
-border-width: 3px;
-border-color: var(--white);
-padding: 5px;
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .header h1 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.project2{
-display: flex;
-border-style: solid;
-border-width: 3px;
-border-color: var(--white);
-padding: 5px;
-}
-.project3{
-display: flex;
-border-style: solid;
-border-width: 3px;
-border-color: var(--white);
-padding: 5px;
-}
-
-.project4{
-display: flex;
-border-style: solid;
-border-width: 3px;
-border-color: var(--white);
-padding: 5px;
+@media screen and (max-width: 700px) {
+  .header h1 {
+    flex-direction: column;
+  }
 }

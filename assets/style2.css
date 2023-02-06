@@ -1,5 +1,5 @@
 :root {
-  --white: #E0DFD5;
+  --white: #e0dfd5;
   --red: #ef6461;
   --yellow: #e4b363;
   --black: #313638;
@@ -50,8 +50,23 @@ li a:hover:not(.active) {
 }
 
 header {
-  color: var(--white);
+  color: var(--red);
 }
 main {
   color: var(--white);
+}
+
+footer {
+  background-color: #333;
+  color: var(--white);
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
