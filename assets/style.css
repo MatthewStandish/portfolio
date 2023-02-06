@@ -9,7 +9,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  background-color: var(--black);
+  background-color: var(--red);
   min-height: 100vh;
 }
 
@@ -31,6 +31,7 @@ html {
   padding: 0;
   overflow: hidden;
   background-color: var(--red);
+  max-width: 2000px;
 }
 
 nav li a {
@@ -58,7 +59,7 @@ nav li a:hover:not(.active) {
   background-color: var(--red);
   min-height: 100vh;
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -94,15 +95,36 @@ nav li a:hover:not(.active) {
 }
 
 .projects {
-  min-height: 250px;
   flex: 1 0 50%;
-  display: inline-block;
+  display: flex;
+}
+
+.projects,
+.box1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects p {
+  color: var(--white);
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  position: absolute;
+  padding-left: 12px;
+}
+
+.boxbottom img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  flex-wrap: wrap;
+  
 }
 
 footer {
   background-color: var(--red);
   color: var(--white);
-  padding: 20px 20px;
+  padding: 20px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -120,6 +142,10 @@ footer {
   .header h1 {
     writing-mode: vertical-lr;
     text-orientation: upright;
+  }
+  .boxbottom {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
