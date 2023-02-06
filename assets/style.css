@@ -71,6 +71,7 @@ nav li a:hover:not(.active) {
   justify-content: center;
   background-color: var(--red);
   flex: 0 0 300px;
+  margin: 0 auto;
 }
 
 .header h1 {
@@ -79,6 +80,7 @@ nav li a:hover:not(.active) {
   color: var(--white);
   font-size: 40px;
   text-shadow: 4px 4px 4px var(--white);
+  margin-top: 0 auto;
 }
 
 .header img {
@@ -95,30 +97,21 @@ nav li a:hover:not(.active) {
 }
 
 .projects {
-  flex: 1 0 50%;
   display: flex;
-}
-
-.projects,
-.box1 img {
-  max-width: 100%;
-  height: auto;
+  flex-direction: column;
 }
 
 .projects p {
-  color: var(--white);
+  color: white;
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  position: absolute;
-  padding-left: 12px;
+  font-size: 50px;
+  display: block;
+  justify-content: center;
+  align-self: center;
 }
 
-.boxbottom img {
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
-  flex-wrap: wrap;
-  
+.projects img {
+  margin: 10px;
 }
 
 footer {
@@ -142,10 +135,6 @@ footer {
   .header h1 {
     writing-mode: vertical-lr;
     text-orientation: upright;
-  }
-  .boxbottom {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
