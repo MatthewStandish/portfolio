@@ -1,9 +1,8 @@
 :root {
-  --white: #f3f4ef;
-  --lightblue: #8c99ad;
-  --red: #e94344;
-  --tan: #ba7b69;
-  --blue: #222e3c;
+  --white: #E0DFD5;
+  --red: #ef6461;
+  --yellow: #e4b363;
+  --black: #313638;
 }
 
 * {
@@ -12,7 +11,7 @@
 }
 
 body {
-  background-color: var(--blue);
+  background-color: var(--black);
 }
 
 header {
@@ -24,14 +23,14 @@ header {
   justify-content: center;
   padding: 0;
   overflow: hidden;
-  background-color: var(--blue);
+  background-color: var(--black);
 }
 
 .nav li {
   float: left;
 }
 
-li a {
+nav li a {
   display: flex;
   color: var(--white);
   text-align: center;
@@ -42,17 +41,19 @@ li a {
   font-display: auto;
 }
 
-li a.active {
+nav li a.active {
   background-color: var(--red);
   color: var(--white);
 }
 
-li a:hover:not(.active) {
-  background-color: var(--lightblue);
+nav li a:hover:not(.active) {
+  background-color: var(--yellow);
   color: var(--white);
 }
 
-.matthewstandish {
+.matthewstandish img {
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 h1 {
@@ -83,6 +84,29 @@ footer {
   align-items: center;
 }
 
-p {
-  margin: 0;
+.project1{
+display: flex;
+border-style: solid;
+border-width: 5px;
+border-color: var(--white);
+}
+
+.project2{
+display: flex;
+border-style: solid;
+border-width: 5px;
+border-color: var(--white);
+}
+.project3{
+display: flex;
+border-style: solid;
+border-width: 5px;
+border-color: var(--white);
+}
+
+.project4{
+display: flex;
+border-style: solid;
+border-width: 5px;
+border-color: var(--white);
 }
