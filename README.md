@@ -6,7 +6,7 @@ My portfolio was created to display projects that I have completed. There is an 
 
 ## Installation
 
-N/A
+https://matthewstandish.github.io/portfolio/
 
 ## Usage
 
