@@ -59,14 +59,21 @@ header {
 main {
   color: var(--white);
   display: flex;
+  justify-content: center;
   justify-content: space-around;
-  align-items: baseline;
-  flex-wrap: wrap;
+  text-align: center;
+  text-justify: inter-word;
   margin-bottom: 10px;
-  margin: 10px
-  
+  margin: 10px;
 }
 
+.skills {
+  list-style-type: none;
+}
+
+.projects {
+  list-style-type: none;
+}
 footer {
   background-color: var(--red);
   color: var(--white);
