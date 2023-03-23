@@ -4,6 +4,8 @@
   --gold: #f5cb5c;
   --black: #242423;
   --light-black: #333533;
+  --font-titles: "Anton", sans-serif;
+  --font-text: "Inter", sans-serif;
 }
 
 * {
@@ -14,7 +16,7 @@
 body {
   background-color: var(--black);
   color: var(--white);
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-text);
   font-size: 16px;
   height: 100vh;
 }
@@ -32,6 +34,7 @@ body {
 
 .intro-name {
   font-size: 10em;
+  font-family: var(--font-titles);
 }
 
 .intro-title {
@@ -67,7 +70,8 @@ body {
 
 .main-project,
 img {
-  width: 500px;
+  width: 75%;
+  border-radius: 15px;
 }
 
 .main-project:hover {
@@ -80,6 +84,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .grid-item {
@@ -89,6 +94,7 @@ img {
   opacity: 50%;
   transition: opacity 1s;
   transition: all 1s;
+  border-radius: 15px;
 }
 
 .grid-item:hover {
