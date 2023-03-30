@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .logo-link {
@@ -236,6 +237,11 @@ img {
   .waves {
     height: 60px;
     min-height: 60px;
+  }
+
+  .container {
+    background-color: var(--white);
+    margin-top: 30px;
   }
 
   .header-layout {
