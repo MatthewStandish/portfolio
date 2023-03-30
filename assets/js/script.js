@@ -1,26 +1,31 @@
-let images = Array.from(document.getElementsByClassName("imgCarousel"));
+// Use a more descriptive name for the variable containing the image elements
+const carouselImages = Array.from(
+  document.getElementsByClassName("imgCarousel")
+);
 
-let mainPhoto = document.getElementById("mainPhoto");
+const mainPhoto = document.getElementById("mainPhoto");
 
 function updateImage(event) {
-  let image = event.target;
+  const clickedImage = event.target;
 
   mainPhoto.classList.add("fade-out");
 
-  image.classList.remove("fade-in");
+  clickedImage.classList.remove("fade-in");
 
-  void image.offsetWidth;
+  void clickedImage.offsetHeight;
 
-  image.classList.add("fade-in");
+  clickedImage.classList.add("fade-in");
 
   setTimeout(function () {
-    mainPhoto.src = image.src;
+    mainPhoto.src = clickedImage.src;
 
     mainPhoto.classList.remove("fade-out");
-  }, 500);
+
+    clickedImage.classList.add("fade-in");
+  }, 300);
 }
 
-images.forEach(function (image) {
+carouselImages.forEach(function (image) {
   image.addEventListener("click", updateImage);
 
   image.classList.add("fade-in");

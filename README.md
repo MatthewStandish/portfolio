@@ -49,6 +49,10 @@ To test please run
 N/A
 ```
 
+## Credits
+
+https://www.cssscript.com/animated-waves-svg/
+
 ## Questions
 
 For additional questions, please contact [mwstandish@aol.com](mailto:mwstandish@aol.com).
