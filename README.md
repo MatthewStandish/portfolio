@@ -1,63 +1,56 @@
-# <My-Portfolio>
+# weather-monitor
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Weather-Monitor is a simple weather site that displays real-time weather information for a specified location. The app is built using HTML, CSS, and JavaScript, and uses an API to fetch weather data. Weather-Monitor is designed to be user-friendly and responsive.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install please run
+
+```
+N/A
+```
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+[Weather Monitor](https://matthewstandish.github.io/weather-monitor/ "Weather Monitor")
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![homepage](assets/images/home.png)
 
-![alt text](assets/images/screenshot.png)
+![searched](assets/images/searched.png)
 
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+To check the weather for a specific location, the user must input the city and country code in the search bar and click the "Search" button. The application will retrieve the current weather conditions and forecast for the next 5 days for the specified location.
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+## Contributing
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+If you find a bug or have a suggestion for how to improve Weather Monitor, please open an issue or submit a pull request on GitHub.
 
 ## Tests
+
+To test please run
+
+```
+N/A
+```
+
+## Questions
+
+For additional questions, please contact [mwstandish@aol.com](mailto:mwstandish@aol.com).
+
+Follow me on GitHub at [MatthewStandish](https://github.com/MatthewStandish).
