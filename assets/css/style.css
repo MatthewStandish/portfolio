@@ -69,7 +69,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 25px;
 }
 
 #mainPhoto {
@@ -178,6 +177,7 @@ img {
   .intro-name {
     font-size: 3em;
     line-height: 1em;
+    margin-bottom: 5px;
   }
 
   .intro-title {
@@ -190,7 +190,6 @@ img {
   }
 
   .wrapper {
-    margin-right: 10px;
   }
 
   #mainPhoto {
@@ -205,20 +204,23 @@ img {
 
 @media only screen and (max-width: 600px) {
   .waves {
+    height: 40px;
+    min-height: 40px;
   }
   .header-layout {
     max-width: 400px;
     color: var(--white);
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
   }
 
   .intro-name {
     font-size: 2em;
-    margin-top: 20px;
+    margin-top: -10px;
   }
 
   .intro-title {
     font-size: 1em;
-    margin-top: -0.1em;
   }
 
   .intro-headshot {
@@ -226,23 +228,27 @@ img {
     height: 100px;
   }
 
-  .wrapper {
-    margin-right: 5px;
-    justify-content: center;
-  }
-
   .image-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   #mainPhoto {
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
   }
 
   .imgCarousel {
     width: 150px;
-    height: 80px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .imgCarousel:hover {
+    width: 160px;
+    height: 160px;
   }
 }
