@@ -24,25 +24,33 @@ body {
   height: 100vh;
 }
 
-/* .header-layout {
+.header-layout {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
 }
 
 .intro-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .intro-name {
   font-size: 10em;
   font-family: var(--font-titles);
+  margin-bottom: 0;
+  line-height: 1;
+  width: 100%;
 }
 
 .intro-title {
-  margin-top: -40px;
   font-size: 2em;
+  margin-top: 0.5em;
 }
 
 .intro-headshot {
@@ -51,14 +59,18 @@ body {
   width: 200px;
   height: 200px;
   padding: 20px;
-  margin-top: 23px;
+  margin-left: 1em;
+}
+
+body {
+  flex-direction: column;
 }
 
 .info {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
-} */
+}
 
 #mainPhoto {
   width: 100%;
