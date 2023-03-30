@@ -96,17 +96,17 @@ body {
   box-shadow: 0 0 0 2px var(--white);
 }
 
-#mainPhoto.fade-out {
-  opacity: 0;
-}
-
 .imgCarousel {
   width: 150px;
   height: 150px;
   transition: opacity 0.5s ease-in-out;
-  opacity: 1;
+  opacity: 0.5;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.imgCarousel.active {
+  opacity: 1;
 }
 
 .imgCarousel:hover {
