@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -34,6 +35,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+}
+
+.link-container {
+  display: none;
 }
 
 .logo-link {
@@ -79,7 +84,7 @@ body {
 
 .intro-name {
   font-size: 4em;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .intro-title {
@@ -318,6 +323,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
   }
 
   .mainPhotoContainer {
@@ -333,5 +339,16 @@ img {
   .imgCarousel:hover {
     width: 260px;
     height: 260px;
+  }
+
+  .link-container {
+    z-index: 1;
+    padding: 10px;
+    border: 2px solid #141414;
+    border-radius: 15px;
+    background-color: var(--white);
+    pointer-events: none;
+    color: var(--black);
+    display: none;
   }
 }
