@@ -24,18 +24,6 @@ images.forEach((image) => {
 let activeItem = document.querySelector(".imgCarousel.active");
 const linkContainer = document.querySelector(".link-container");
 
-window.addEventListener("resize", () => {
-  const screenWidth = window.innerWidth;
-  if (screenWidth < 600 && activeItem) {
-    const githubLink = activeItem.getAttribute("data-github-link");
-    const imageLink = activeItem.getAttribute("data-image-link");
-    const linkContainer = document.querySelector(".link-container");
-
-    linkContainer.innerHTML = `<a href="${githubLink}" target="_blank">GitHub Link</a>
-                               <a href="${imageLink}" target="_blank">Image Link</a>`;
-  }
-});
-
 const imageItems = document.querySelectorAll(".imgCarousel");
 imageItems.forEach((item) => {
   item.addEventListener("click", () => {
@@ -45,36 +33,37 @@ imageItems.forEach((item) => {
       if (screenWidth < 600) {
         const githubLink = activeItem.getAttribute("data-github-link");
         const imageLink = activeItem.getAttribute("data-image-link");
-        const linkContainer = document.querySelector(".link-container");
+
+        linkContainer.innerHTML = `<a href="${githubLink}" target="_blank">GitHub |</a>
+                               <a href="${imageLink}" target="_blank">Site</a>`;
         linkContainer.style.display = "block";
-
-        linkContainer.innerHTML = `<a href="${githubLink}" target="_blank">GitHub Link |</a>
-                                   <a href="${imageLink}" target="_blank">Image Link</a>`;
-
-        const activeRect = activeItem.getBoundingClientRect();
-        const centerX = activeRect.left + activeRect.width / 2;
-        const centerY = activeRect.top + activeRect.height / 2;
-
-        linkContainer.style.position = "absolute";
-        linkContainer.style.top = `${
-          centerY - linkContainer.offsetHeight / 2
-        }px`;
-        linkContainer.style.left = `${
-          centerX - linkContainer.offsetWidth / 2
-        }px`;
+        positionLinkContainer();
         linkContainer.style.pointerEvents = "auto";
-
-        window.addEventListener("click", () => {
-          const screenWidth = window.innerWidth;
-          if (screenWidth < 600 && activeItem) {
-            const activeRect = activeItem.getBoundingClientRect();
-            const scrollTop =
-              window.pageYOffset || document.documentElement.scrollTop;
-            linkContainer.style.top = `${activeRect.top + scrollTop}px`;
-            linkContainer.style.left = `${activeRect.left}px`;
-          }
-        });
       }
+    } else {
+      linkContainer.style.display = "none";
     }
   });
+});
+
+function positionLinkContainer() {
+  const activeRect = activeItem.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const centerX = activeRect.left + activeRect.width / 2;
+  const centerY = activeRect.top + activeRect.height / 2 + scrollTop;
+
+  linkContainer.style.position = "absolute";
+  linkContainer.style.top = `${centerY - linkContainer.offsetHeight / 2}px`;
+  linkContainer.style.left = `${centerX - linkContainer.offsetWidth / 2}px`;
+  linkContainer.style.color = "#141414";
+  linkContainer.style.textDecoration = "none";
+  linkContainer.style.fontFamily = "Inter";
+  linkContainer.style.boxShadow = "0px 0px 10px rgba(20, 20, 20, 0.2)";
+}
+
+window.addEventListener("resize", () => {
+  const screenWidth = window.innerWidth;
+  if (screenWidth >= 600) {
+    linkContainer.style.display = "none";
+  }
 });

@@ -1,4 +1,4 @@
-const paragraph = "";
+const paragraph = "My name is Matthew Standish";
 
 const typingContainer = document.getElementById("typing-container");
 
@@ -11,7 +11,7 @@ function typeParagraph() {
     } else {
       clearInterval(interval);
     }
-  }, 40); // delay in milliseconds between characters
+  }, 40);
 }
 
-setTimeout(typeParagraph, 1000); // delay in milliseconds before typing starts
+setTimeout(typeParagraph, 1000);
