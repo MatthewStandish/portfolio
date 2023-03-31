@@ -31,11 +31,8 @@ window.addEventListener("resize", () => {
     const imageLink = activeItem.getAttribute("data-image-link");
     const linkContainer = document.querySelector(".link-container");
 
-    // Update link container with links
     linkContainer.innerHTML = `<a href="${githubLink}" target="_blank">GitHub Link</a>
                                <a href="${imageLink}" target="_blank">Image Link</a>`;
-
-    // Position link container on top of active element
   }
 });
 
@@ -51,17 +48,13 @@ imageItems.forEach((item) => {
         const linkContainer = document.querySelector(".link-container");
         linkContainer.style.display = "block";
 
-        // Update link container with links
         linkContainer.innerHTML = `<a href="${githubLink}" target="_blank">GitHub Link |</a>
                                    <a href="${imageLink}" target="_blank">Image Link</a>`;
 
-        // Position link container on top of active element
-        // Calculate the center point of the active element
         const activeRect = activeItem.getBoundingClientRect();
         const centerX = activeRect.left + activeRect.width / 2;
         const centerY = activeRect.top + activeRect.height / 2;
 
-        // Position link container in the center of the active element
         linkContainer.style.position = "absolute";
         linkContainer.style.top = `${
           centerY - linkContainer.offsetHeight / 2
@@ -74,7 +67,6 @@ imageItems.forEach((item) => {
         window.addEventListener("click", () => {
           const screenWidth = window.innerWidth;
           if (screenWidth < 600 && activeItem) {
-            // Position link container on top of active element, accounting for page scroll
             const activeRect = activeItem.getBoundingClientRect();
             const scrollTop =
               window.pageYOffset || document.documentElement.scrollTop;
