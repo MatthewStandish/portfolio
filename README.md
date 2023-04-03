@@ -4,7 +4,7 @@
 
 ## Description
 
-[This is my portfolio.](https://www.matthewstandish.io.github/portfolio/)
+[This is my portfolio.](https://matthewstandish.github.io/portfolio/)
 
 ## License
 
