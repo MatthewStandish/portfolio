@@ -146,7 +146,7 @@ body {
 }
 
 #mainPhoto:hover {
-  box-shadow: 0 0 0 2px var(--white);
+  box-shadow: 0 0 0 3px var(--white);
 }
 
 .imgCarousel {
@@ -165,7 +165,7 @@ body {
 .imgCarousel:hover {
   width: 160px;
   height: 160px;
-  box-shadow: 0 0 0 2px var(--white);
+  box-shadow: 0 0 0 3px var(--white);
   margin: 5px;
 }
 

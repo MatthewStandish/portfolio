@@ -9,8 +9,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Anton"
     />
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/about.css" />
   </head>
   <body>
     <svg
@@ -49,9 +52,44 @@
         <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
       </g>
     </svg>
-    <div id="hello-message">&ltHELLO&gt</div>
-    <div id="typing-container"></div>
-    <a class="back-home" href="index.html">Back Home</a>
+    <section class="all">
+      <div class="wrapper">
+        <button class="btn">
+          <i class="ri-share-line"></i>
+        </button>
+        <ul class="list">
+          <li class="item">
+            <a href="index.html" class="link back">
+              <i class="ri-arrow-go-back-line"></i>
+            </a>
+          </li>
+          <li class="item" style="--d: 0.25s">
+            <a
+              href="https://github.com/MatthewStandish"
+              target="_blank"
+              class="link gh"
+            >
+              <i class="ri-github-line"></i>
+            </a>
+          </li>
+          <li class="item" style="--d: 0.5s">
+            <a
+              href="https://www.linkedin.com/in/matthew-standish-1a55b9242/"
+              target="_blank"
+              class="link li"
+            >
+              <i class="ri-linkedin-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <header class="hello">
+        <div id="hello-message">&ltHELLO&gt</div>
+      </header>
+      <section class="typing">
+        <div id="typing-container"></div>
+      </section>
+    </section>
     <script src="./assets/js/about-script.js"></script>
   </body>
 </html>
