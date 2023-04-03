@@ -8,6 +8,11 @@
   --font-text: "Inter", sans-serif;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/css/fonts/Inter-Regular.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -336,6 +341,9 @@ img {
     width: 250px;
     height: 250px;
     margin: 5px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+    cursor: pointer;
   }
 
   .imgCarousel:hover {
@@ -347,12 +355,16 @@ img {
     z-index: 1;
     padding: 10px;
     border-radius: 15px;
-    pointer-events: all;
-    color: var(--white);
     display: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
     padding: 10px;
+    font-family: var(--font-text);
+    color: var(--black);
+  }
+
+  .link-container a {
+    color: var(--black);
+    font-weight: 600;
   }
 }

@@ -55,10 +55,7 @@ function positionLinkContainer() {
   linkContainer.style.position = "absolute";
   linkContainer.style.top = `${centerY - linkContainer.offsetHeight / 2}px`;
   linkContainer.style.left = `${centerX - linkContainer.offsetWidth / 2}px`;
-  linkContainer.style.color = "#141414";
-  linkContainer.style.textDecoration = "none";
-  linkContainer.style.fontFamily = "Inter";
-  linkContainer.style.boxShadow = "0px 0px 10px rgba(20, 20, 20, 0.2)";
+  linkContainer.style.boxShadow = "0px 0px 10px rgba(20, 20, 20, 0.4)";
 }
 
 window.addEventListener("resize", () => {
