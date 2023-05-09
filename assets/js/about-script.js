@@ -30,7 +30,7 @@ function typeParagraph(callback) {
         callback();
       }
     }
-  }, 35);
+  }, 30);
 }
 
 setTimeout(() => {
