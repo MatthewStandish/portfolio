@@ -91,7 +91,6 @@ a {
   position: absolute;
   list-style: none;
   transition: transform 0.5s;
-  transition-delay: var(0s);
 }
 .wrapper.active .item:nth-child(1) {
   transform: translateX(-65px);
