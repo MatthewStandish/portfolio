@@ -61,7 +61,8 @@ a {
 }
 
 .wrapper {
-  margin-bottom: 20px;
+  margin-top: 200px;
+  margin-left: 558px;
 }
 
 .wrapper :is(.btn, .link) {
@@ -90,7 +91,7 @@ a {
   position: absolute;
   list-style: none;
   transition: transform 0.5s;
-  transition-delay: var(--d);
+  transition-delay: 10s;
 }
 .wrapper.active .item:nth-child(1) {
   transform: translateX(-65px);
