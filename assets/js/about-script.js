@@ -30,7 +30,7 @@ function typeParagraph(callback) {
         callback();
       }
     }
-  }, 30);
+  }, 20);
 }
 
 setTimeout(() => {
@@ -39,11 +39,11 @@ setTimeout(() => {
     wrapperEl.style.display = "block";
     let opacity = 0;
     const interval = setInterval(() => {
-      opacity += 0.01;
+      opacity += 0.02;
       wrapperEl.style.opacity = opacity;
       if (opacity >= 1) {
         clearInterval(interval);
       }
-    }, 10);
+    }, 20);
   });
 }, 1000);
