@@ -194,6 +194,7 @@ a {
   }
 
   #typing-container {
+    font-family: var(--font-text);
     width: 100%;
     height: 100%;
   }
