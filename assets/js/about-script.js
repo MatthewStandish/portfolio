@@ -35,11 +35,8 @@ function typeParagraph(callback) {
 
 setTimeout(() => {
   typeParagraph(() => {
-    wrapperEl.style.opacity = 0;
-    wrapperEl.style.display = "block";
-    let opacity = 0;
+    let opacity = 1;
     const interval = setInterval(() => {
-      opacity += 0.02;
       wrapperEl.style.opacity = opacity;
       if (opacity >= 1) {
         clearInterval(interval);

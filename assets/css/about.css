@@ -56,13 +56,14 @@ a {
 
 #typing-container {
   width: 100%;
-  height: 700px;
+  height: 300px;
   overflow: hidden;
 }
 
 .wrapper {
-  margin-top: 200px;
-  margin-left: 558px;
+  top: 177px;
+  left: 611px;
+  transform: translate(-29px, 0px);
 }
 
 .wrapper :is(.btn, .link) {
@@ -84,8 +85,8 @@ a {
 }
 .active .btn,
 .btn:hover {
-  outline: 3px solid #0561ee;
-  outline-offset: -4px;
+  outline: 3px solid #141414;
+  outline-offset: -5px;
 }
 .item {
   position: absolute;
@@ -108,11 +109,6 @@ a {
 .back:hover {
   background-color: #f5cb5c;
   color: inherit;
-}
-
-.all {
-  display: flex;
-  align-items: center;
 }
 
 .gh:hover {
@@ -195,15 +191,5 @@ a {
   .waves {
     height: 40px;
     min-height: 40px;
-  }
-  .wrapper {
-    padding-bottom: 20px;
-    padding-top: 200px;
-    display: none;
-  }
-  #typing-container {
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
   }
 }
