@@ -192,4 +192,9 @@ a {
     height: 40px;
     min-height: 40px;
   }
+
+  #typing-container {
+    width: 100%;
+    height: 100%;
+  }
 }
